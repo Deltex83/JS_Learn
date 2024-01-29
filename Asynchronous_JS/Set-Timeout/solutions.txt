@@ -1,0 +1,53 @@
+// Set 1:
+g1, g2, (2s Sleep), g3, immediate: @r:main, @r:global
+
+// Set 2:
+g1, g2, (2s Sleep), g3, @r:main (i), m1, @r:global
+
+// Set 3:
+g1, g2, (<2s Sleep), @r:main, @r:global (i), (2s Sleep), g3
+
+// Set 4:
+g1, g2, (1s Sleep), @r:global, (2s Sleep), g3, @r:main (i), m1
+
+// Set 5:
+g1, g2, (2s Sleep), @r:main, m1, (<1s Sleep), @r:global, (2s Sleep), g3
+
+// Set 6:
+g1, g2, (2s Sleep), g3, @r:main, m1, (<1s Sleep), @r:global
+
+// Set 7:
+g1, m1, g2, (<2s Sleep), @r:main, (<1s Sleep), @r:global, (2s Sleep), g3
+
+// Set 8:
+g1, m1, g2, @r:main2 (i), (<2s Sleep), @r:main, (<1s Sleep), @r:global, (2s Sleep), g3
+
+// Set 9:
+g1, g2, (<2s Sleep), @r:main, m1, @r:main2, m2, (<1s Sleep), @r:global, (2s Sleep), g3
+
+// Set 10:
+g1, g2, @r:global (i), (2s Sleep), g3, @r:main (i), m1, @r:main2 (i), m2
+
+// Set 11:
+g1, m1, g2, @r:main (i), @r:main2 (i), m2, @r:global (i), (2s Sleep), g3
+
+// Set 12:
+g1, @r:m (i), m1, @r:m2 (i), m2, g2, @r:g (i), (2s Sleep), g3
+
+// Set 13:
+g1, m1, @r:main (i), @r:main2 (i), m2, g2, @r:global (i), (2s Sleep), g3
+
+// Set 14:
+g1, m1, @r:main, (<1s Sleep), @r:main2, m2, g2, @r:global (i), (2s Sleep), g3
+
+// Set 15:
+g1, m1, (1s Sleep), @r:main2, m2, g2, @r:global (i), (2s Sleep), g3, @r:main (i)
+
+// Set 16:
+g1, m1, (<1s Sleep), @r:main, (<<<Sleep), @r:main2, m2, g2, @r:global (i), (2s Sleep), g3
+
+// Set 17:
+g1, m1, g2, @r:global (i), (2s Sleep), g3, @r:main (i), @r:main2 (i), m2
+
+// Set 18:
+g1, m1, g2, @r:main (i), @r:global (i), (2s Sleep), g3, @r:main2 (i), m2
