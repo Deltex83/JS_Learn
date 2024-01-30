@@ -51,3 +51,6 @@ g1, m1, g2, @r:global (i), (2s Sleep), g3, @r:main (i), @r:main2 (i), m2
 
 // Set 18:
 g1, m1, g2, @r:main (i), @r:global (i), (2s Sleep), g3, @r:main2 (i), m2
+
+// Set 19:
+o1, g1, m1, g2, o2, o3, @r:main (i), @r:global (i), (2s Sleep), g3, @r:oGlobal (i), @r:main2 (i), m2
